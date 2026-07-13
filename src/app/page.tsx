@@ -6,7 +6,7 @@ export default function About() {
     <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-6 py-16">
       <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
         <Image
-          src="/images/headshot.jpg"
+          src="/images/headshot-v3.jpg"
           alt="Luke O'Dair"
           width={112}
           height={112}
