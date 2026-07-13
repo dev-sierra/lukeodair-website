@@ -2,7 +2,7 @@ export type Project = {
   slug: string;
   title: string;
   summary: string;
-  status: "shipped" | "in-progress" | "placeholder";
+  status: "shipped" | "in-progress" | "placeholder" | "historical";
 };
 
 export const projects: Project[] = [
@@ -25,5 +25,12 @@ export const projects: Project[] = [
     summary:
       "Open-source MCP server for Snowflake with PII-safe dynamic masking — read-only queries, masking enforcement, role-based access.",
     status: "in-progress",
+  },
+  {
+    slug: "cricket-edge-detection",
+    title: "Edge Detection in Amateur Cricket",
+    summary:
+      "M.Eng dissertation: a wearable accelerometer + microphone device and SVM classifier that detects faint bat-ball edges in cricket, reaching 89.3% peak accuracy against the ICC's 91% umpire benchmark.",
+    status: "historical",
   },
 ];

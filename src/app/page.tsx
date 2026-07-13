@@ -1,11 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
   return (
     <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-6 py-16">
-      <h1 className="text-2xl font-semibold tracking-tight">
-        Luke O&apos;Dair
-      </h1>
+      <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+        <Image
+          src="/images/headshot.jpg"
+          alt="Luke O'Dair"
+          width={112}
+          height={112}
+          priority
+          className="h-28 w-28 rounded-full object-cover"
+        />
+        <h1 className="text-2xl font-semibold tracking-tight">
+          Luke O&apos;Dair
+        </h1>
+      </div>
 
       <p className="text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
         I build data platforms from zero to one — most recently a multi-cloud

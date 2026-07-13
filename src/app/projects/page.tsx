@@ -5,6 +5,7 @@ const statusLabel: Record<string, string> = {
   shipped: "Shipped",
   "in-progress": "In progress — Aug 2026",
   placeholder: "Coming soon",
+  historical: "Historical — 2017",
 };
 
 export default function Projects() {
